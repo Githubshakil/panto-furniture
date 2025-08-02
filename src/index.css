@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --color-primary: #E58411;
+    --color-secondary: #1E1E1E;
+    --color-secondary-bgColor: #F7F7F7;
+    --font-poppins:Poppins, sans-serif;
+    
+
+}
