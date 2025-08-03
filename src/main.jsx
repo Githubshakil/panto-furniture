@@ -1,18 +1,22 @@
-import { StrictMode } from "react";
+
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/home/HomePage.jsx";
+import ShopPage from "./pages/shop/ShopPage.jsx";
+import About from "./pages/about/About.jsx";
+import Contact from "./pages/contact/Contact.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
       <Route element={<App />}>
-        <Route path="/" element={<div>Home Page</div>} />
+        <Route path="/" element={<HomePage/>} />
         <Route path="/furniture" element={<div>Furniture</div>} />
-        <Route path="/shop" element={<div>Shop</div>} />
-        <Route path="/about" element={<div>About Us</div>} />
-        <Route path="/contact" element={<div>Contact</div>} />
+        <Route path="/shop" element={<ShopPage/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
 
       </Route>
     </Routes>
