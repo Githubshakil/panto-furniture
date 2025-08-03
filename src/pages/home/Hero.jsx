@@ -5,7 +5,7 @@ import TooltipButton from "../../components/TooltipButton";
 const Hero = () => {
   return (
     <section
-      className="h-screen relative bg-fixed bg-cover bg-center text-white"
+      className="h-screen relative bg-center bg-cover text-white"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="md:pt-44 pt-24 text-center space-y-6 md:w-1/2 mx-auto px-2">
