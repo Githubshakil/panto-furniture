@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 const Hero = () => {
   return (
     <section
-      className="h-screen relative bg-cover bg-center text-white"
+      className="h-screen relative bg-fixed bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="md:pt-44 pt-24 text-center space-y-6 md:w-1/2 mx-auto px-2">
@@ -19,6 +19,24 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* bottom blur effect */}
+      <div className="absolute inset-x-0 bottom-0 h-3/4 -mb-2 bg-gradient-to-t from-white via-transparent to-transparent blur-sm"/>
+
+      {/* hover button displaying tooltip box  */}
+      <div className=" absolute bottom-40 left-24 group ">
+        <button className=" relative p-4 bg-white/25 rounded-full border-1 text-xl  cursor-pointer  ">
+            <div className="hidden absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 p-2 rounded-lg bg-white/25 shadow-md group-hover:flex space-x-1">
+              <div className="size-6 bg-red-700 border-white rounded-full"/>
+              <div className="size-6 bg-green-700 border-white rounded-full"/>
+              <div className="size-6 bg-blue-700 border-white rounded-full"/>
+
+              {/* tooltip arrow */}
+              <div className=" absolute left-1/2 transform -translate-x-1/2 -bottom-2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-white/35 "></div>
+            </div>
+        </button>
+      </div>
+      
     </section>
   );
 };
