@@ -1,8 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <nav>Navbar</nav>
+    <Outlet/>
+    <footer>Footer</footer>
+    </>
   )
 }
 
