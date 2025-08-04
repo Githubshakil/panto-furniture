@@ -12,7 +12,7 @@ const Expriences = () => {
         <h3 className="font-poppins uppercase text-lg font-semibold text-primary mb-4">
           experiences
         </h3>
-        <h2 className="font-poppins capitalize text-[42px] font-bold md:w-[512px] text-[#1e1e1e] mb-4 ">we provide you the best experience</h2>
+        <h2 className="font-poppins capitalize text-[42px] font-bold lg:w-[512px] text-[#1e1e1e] mb-4 ">we provide you the best experience</h2>
         <p className="font-poppins text-lg text-[#1e1e1e] leading-[185%] md:w-[556px] mb-5 lg:w-2/3">You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
         <ButtonComponent text={"More Info"}/>
       </div>
