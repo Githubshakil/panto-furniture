@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaBars, FaShoppingBag } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink } from "react-router-dom";
+import { CartContext } from "../context/CartContext";
 
 const navItems = [
   { name: "Furniture", path: "/furniture" },
@@ -55,10 +56,13 @@ const NavbarSection = () => {
     };
   }, []);
 
+  // cart items from context
+  const {cartCount} = useContext(CartContext)
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition dark:text-black duration-300 ease-in-out  ${
-        isScroll ? "bg-white shadow-md " : "bg-transparent text-white"
+      className={`fixed top-0 left-0 right-0 z-50 transition  duration-300 ease-in-out  ${
+        isScroll ? "bg-white shadow-md dark:text-black " : "bg-transparent text-white"
       }`}
     >
       <nav className=" section-container flex justify-between items-center  ">
@@ -99,7 +103,7 @@ const NavbarSection = () => {
         <div className="hidden md:block cursor-pointer relative">
           <FaShoppingBag className="text-xl" />
           <sup className="absolute top-0 -right-3 bg-primary text-white w-5 h-5 rounded-full flex items-center justify-center text-xs">
-            0
+            {cartCount}
           </sup>
         </div>
       </nav>
