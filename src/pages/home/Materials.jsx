@@ -12,8 +12,8 @@ const Materials = () => {
         <h3 className="font-poppins uppercase text-lg font-semibold text-primary mb-4">
           Materials
         </h3>
-        <h2 className="font-poppins capitalize text-[42px] font-bold lg:w-[476px] text-[#1e1e1e] mb-4 ">Very serious materials for making furniture</h2>
-        <p className="font-poppins text-lg text-[#1e1e1e] leading-[185%] md:w-[556px] mb-5 lg:w-[556px]">Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price</p>
+        <h2 className="font-poppins capitalize text-[42px] font-bold lg:w-[476px] text-[#1e1e1e] mb-4 dark:text-white ">Very serious materials for making furniture</h2>
+        <p className="font-poppins text-lg text-[#1e1e1e] leading-[185%] md:w-[556px] mb-5 lg:w-[556px] dark:text-white">Because panto was very serious about designing furniture for our environment, using a very expensive and famous capital but at a relatively low price</p>
         <ButtonComponent text={"More Info"}/>
       </div>
        <div className="md:w-1/2 grid grid-cols-2 md:grid-cols-3 md:items-end items-center ">

@@ -18,7 +18,7 @@ const Testimonial = () => {
         <h3 className="font-poppins uppercase text-lg font-semibold text-primary mb-4">
           Testimonials
         </h3>
-        <h2 className="font-poppins capitalize text-[42px] font-bold text-[#1e1e1e] mb-4 ">
+        <h2 className="font-poppins capitalize text-[42px] font-bold text-[#1e1e1e] mb-4 dark:text-white ">
           Our Client Reviews
         </h2>
       </div>

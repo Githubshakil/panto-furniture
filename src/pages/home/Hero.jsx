@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import bannerImg from "../../assets/images/banner.png";
 import { FaSearch } from "react-icons/fa";
 import TooltipButton from "../../components/TooltipButton";
+import { BsMoon, BsSun } from "react-icons/bs";
+import { ThemeContext } from "../../context/ThemeContext";
+
+
+
+
+
+
+
+
 const Hero = () => {
+
+const {isDarkMode, ToggleTheme} = useContext(ThemeContext)
+
+
+
+
   return (
     <section
       className="h-screen relative bg-center bg-cover text-white"
@@ -37,6 +53,18 @@ const Hero = () => {
       </div>
       <div className="hidden lg:block absolute bottom-12 right-16">
         <TooltipButton position="bottom"/>
+      </div>
+
+
+      {/* Dark and light color switer */}
+
+      <div className=" absolute bottom-40 right-20 z-40">
+        <button onClick={ToggleTheme} className="focus:outline-none font-bold text-lg p-5 bg-black rounded-full cursor-pointer">
+          
+          {
+            isDarkMode ? <BsSun className="text-yellow-300"/> : <BsMoon className="text-yellow-300"/>
+          }
+        </button>
       </div>
       
     </section>

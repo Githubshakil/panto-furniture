@@ -57,7 +57,7 @@ const NavbarSection = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out  ${
+      className={`fixed top-0 left-0 right-0 z-50 transition dark:text-black duration-300 ease-in-out  ${
         isScroll ? "bg-white shadow-md " : "bg-transparent text-white"
       }`}
     >

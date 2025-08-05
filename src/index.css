@@ -2,30 +2,33 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme{
-    --color-primary: #E58411;
-    --color-secondary: #1E1E1E;
-    --color-secondary-bgColor: #F7F7F7;
-    --font-poppins:Poppins, sans-serif;
-    
+@theme {
+  --color-primary: #E58411;
+  --color-secondary: #1E1E1E;
+  --color-secondary-bgColor: #F7F7F7;
+  --font-poppins: Poppins, sans-serif;
+
 
 }
 
-.section-container{
-    @apply max-w-screen-2xl container mx-auto py-6 px-4
+.section-container {
+  @apply max-w-screen-2xl container mx-auto py-6 px-4
 }
 
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
   @apply px-4 py-3 ring-1 ring-primary rounded-full bg-white text-black;
- font-size: 18px !important;
- 
+  font-size: 18px !important;
+
 }
 
 .swiper-button-prev:hover:after,
 .swiper-button-next:hover:after {
   @apply bg-primary text-white;
-   
+
 }
 
+.dark {
+  @apply bg-gray-900 text-white
+}
