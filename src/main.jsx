@@ -7,6 +7,7 @@ import HomePage from "./pages/home/HomePage.jsx";
 import ShopPage from "./pages/shop/ShopPage.jsx";
 import About from "./pages/about/About.jsx";
 import Contact from "./pages/contact/Contact.jsx";
+import 'sweetalert2/dist/sweetalert2.min.css'
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>

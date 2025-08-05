@@ -5,6 +5,7 @@ import FooterSection from "./components/FooterSection";
 import { ThemeProvider } from "./context/ThemeContext";
 import { CartProvider } from "./context/CartContext";
 
+
 const App = () => {
   return (
     <ThemeProvider>
