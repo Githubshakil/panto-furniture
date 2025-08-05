@@ -58,7 +58,7 @@ const {isDarkMode, ToggleTheme} = useContext(ThemeContext)
 
       {/* Dark and light color switer */}
 
-      <div className=" absolute bottom-40 right-20 z-40">
+      <div className=" absolute bottom-10 right-10 sm:bottom-40 sm:right-20 z-40">
         <button onClick={ToggleTheme} className="focus:outline-none font-bold text-lg p-5 bg-black rounded-full cursor-pointer">
           
           {
